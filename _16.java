@@ -11,7 +11,7 @@ public class _16 {
             int j = i + 1, k = nums.length - 1;
 
             while(j < k){
-                
+
                 int currSum = nums[i] + nums[j] + nums[k];
                 int currDiff = Math.abs(currSum - target);
                 
@@ -32,5 +32,10 @@ public class _16 {
         
         return sum;
         
+    }
+
+
+    public static void main(String[] args) {
+
     }
 }

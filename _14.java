@@ -23,4 +23,9 @@ public class _14 {
         
         return result;
     }
+
+    public static void main(String[] args) {
+
+
+    }
 }
