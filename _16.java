@@ -8,10 +8,8 @@ public class _16 {
         int sum = 0, diff = Integer.MAX_VALUE;
         Arrays.sort(nums);
         for(int i = 0; i < nums.length; i++){
-            
             int j = i + 1, k = nums.length - 1;
-            
-            
+
             while(j < k){
                 
                 int currSum = nums[i] + nums[j] + nums[k];
