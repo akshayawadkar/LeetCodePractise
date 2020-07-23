@@ -24,4 +24,8 @@ public class _11 {
         
         return maxArea;
     }
+
+    public static void main(String[] args) {
+
+    }
 }
