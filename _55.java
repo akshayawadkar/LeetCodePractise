@@ -8,7 +8,12 @@ public class _55 {
             return true;
         }
         
-        
+//
+//        if(nums.length == 0){
+//            return true;
+//        }
+//
+
         int maxJump = nums[0];
         
         for(int i = 1; i < nums.length; i++){
