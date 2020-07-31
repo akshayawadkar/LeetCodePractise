@@ -1,5 +1,8 @@
 package com.leetcode;
 
+
+import java.util.*;
+
 public class _114 {
 
     public void flatten(TreeNode root) {
