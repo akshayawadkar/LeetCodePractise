@@ -1,5 +1,7 @@
 package com.leetcode;
 
+import java.util.Arrays;
+
 public class _746 {
 
     int[] dp;
