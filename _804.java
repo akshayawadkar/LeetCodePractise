@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class _804 {
 
         public int uniqueMorseRepresentations(String[] words) {
