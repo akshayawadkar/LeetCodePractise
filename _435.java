@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class _435 {
 
         public int eraseOverlapIntervals(int[][] intervals) {

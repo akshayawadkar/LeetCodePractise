@@ -1,3 +1,5 @@
+import java.util.PriorityQueue;
+
 public class _253 {
 
         public int minMeetingRooms(int[][] intervals) {

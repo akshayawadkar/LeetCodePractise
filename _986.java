@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class _986 {
 
         public int[][] intervalIntersection(int[][] A, int[][] B) {
