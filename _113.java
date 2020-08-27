@@ -15,19 +15,43 @@ public class _113 {
      * }
      */
 
-        public boolean hasPathSum(TreeNode root, int sum) {
+        public List<List<Integer>> pathSum(TreeNode root, int sum) {
 
             if(root == null){
-                return false;
+                return new ArrayList<>();
             }
+
+            List<Integer> subList = new ArrayList<>();
+            List<List<Integer>> result = new ArrayList<>();
 
             sum -= root.val;
 
+            subList.add(root.val);
+
+            dfs(root, sum, subList, result);
+
+            return result;
+        }
+
+        public void dfs(TreeNode root, int sum, List<Integer> subList, List<List<Integer>> result){
+
+
             if(root.left == null && root.right == null && sum == 0){
-                return true;
+                result.add(new ArrayList<>(subList));
+                return;
             }
 
-            return hasPathSum(root.left, sum) || hasPathSum(root.right, sum);
+            if(root.left != null){
+                subList.add(root.left.val);
+                dfs(root.left, sum - root.left.val, subList, result);
+                subList.remove(subList.size() - 1);
+            }
+
+            if(root.right != null){
+                subList.add(root.right.val);
+                dfs(root.right, sum - root.right.val, subList, result);
+                subList.remove(subList.size() - 1);
+            }
 
         }
 
