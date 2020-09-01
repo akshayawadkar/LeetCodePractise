@@ -4,14 +4,13 @@ public class _134 {
 
             int n = gas.length;
 
+            int extra = 0, lacking = 0;
+
             int start = 0;
-            int extra = 0;
-            int lacking = 0;
 
+            for(int i = 0; i < gas.length; i++){
 
-            for(int i = 0; i < n; i++){
-
-                extra = extra + gas[i] - cost[i];
+                extra = extra + (gas[i] - cost[i]);
 
                 if(extra < 0){
                     start = i + 1;
