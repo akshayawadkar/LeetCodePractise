@@ -1,3 +1,5 @@
+import java.util.List;
+
 public class _763 {
 
         public List<Integer> partitionLabels(String s) {
