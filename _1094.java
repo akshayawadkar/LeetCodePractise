@@ -1,3 +1,5 @@
+import java.util.Map;
+
 public class _1094 {
     class Solution {
         public boolean carPooling(int[][] trips, int capacity) {
